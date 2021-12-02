@@ -1,0 +1,174 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+/* This is our style reset sheet, just to help keep our sylized components consistent across multiple browsers */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* Here is where my personal editing for the css style comes into play the above was 99% copy paste, everything below is written to 
+correspond with the matching body element, h2, p, .tittle (Yes I know its spelled wrong), .B, etc. */
+
+h2 {
+    color:#272727;
+    font-size: 70px;
+    margin: 0px;
+    background-color: #46403b;
+    text-align: center;
+    padding: 10px;
+      }
+      
+      p{
+          color: #a8a7a7;
+          background-color: #55504a;
+          text-align: center;
+          margin-bottom: 50px;
+          padding: 10px;
+      }
+      .tittle{
+          background-color: #58534d;
+      }
+
+      
+     .B{
+          align-items: center;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      /* Here is the highlight effect that happens when you mouse over one of the table rows */
+      tr:hover {background-color: yellow;}
+      /* These are specifically to manage the table on the screen, rather than stitch them together I've opted to keep
+      their dictations for style seperate for the time being */
+      tr{
+          text-align: center;
+      }
+      
+      td{
+          text-align: center;
+      }
+
+      th{
+          text-align: center;
+      }
+
+      table{
+          background-color: #6a8e7f;
+      }
+      /* here is where the body elements are dictated for style, though this section is dictated to editing the background and it's subsiquent image */
+      body{
+          background-image: url(/control-lab-900x600-1.jpg);
+          padding: 300px ;
+          margin:50px ;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position:bottom;
+          background-color: #201f1e;
+      }
+
+      /*Note there is no open or close for style to dictate here, because we are not using this within the html file, this stylesheet is being referenced
+      within and thus the file itself is it's own container. */
