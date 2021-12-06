@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <!-- Here is where we set up both our stylesheet and our JS script file, along with our title that is displayed in the tab header-->
+        <link rel="stylesheet" href="main.css">
+        <title>UAT Operator Login</title>
+        <script src="main.js"></script>
+        
+        <body>
+            <!-- Above is the begining of our body statement while below is where our blocking for the HTML file begins-->
+            <h1>Operator Login</h1>        
+            
+            <!-- Name of form to access it in JS. Also runs function upon pressing button -->  
+            <form name="LOGON" action="/submit.php" onsubmit="return LogOn()" method="post"> 
+    
+            <!-- Creates the text input bars for user input --> 
+            <p class="Bar1">First Name: <input type="text" size=30 name="First_name"> </p><br>       
+            <p class="Bar2"> Last Name: <input type="text" size=30 name="Last_name">  </p><br>
+            <p class="Bar3">Badge Number: <input type="text" size=30 name="Badge_number">  </p><br>  
+        
+            <!-- Here we make our buttons for the login to both submit and reset the function in our JS file-->    
+            <p>
+            <input type="submit" value="Send" name="Submit">     
+            <input type="reset" value="Reset" name="Reset">  
+            </p>         
+         </form>
+    </body>
+</html>
