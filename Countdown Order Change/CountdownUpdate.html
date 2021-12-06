@@ -1,0 +1,61 @@
+
+
+<!-- Author of this document: Thomas J. Harris -->
+<!-- This is to explain the type of document we are composing HTML-->
+<!DOCTYPE html>
+<!-- This is to dictate the language that will be displayed for our plaintext -->
+<html lang="en">
+  <!-- Here we determine the Head of our file to compose the structure before filling with body -->  
+<head>
+    <!-- Here is where our document title is -->
+    <title>Document</title>
+    <!-- Since we are writing in Javascript we need to encapsulate our script as it's own contained module for the browser to process -->
+    
+   
+    <!-- Since our script is terminated we need to tell the browser where the javascript we've written ends -->
+</head>
+<!-- Same goes for the head of the document so we can now structure our body -->
+<body>
+    <!-- dictating a location for fonts and other stylistic choices for my body section-->
+    <style>
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700&display=swap');
+
+/* Dictating the font families for p, h1 and h2 elements for use with the imported font above */
+   p {  font-family: 'Anton', sans-serif;
+
+        font-family: 'Roboto', sans-serif; }
+
+    h1 {  font-family: 'Anton', sans-serif;
+
+          font-family: 'Roboto', sans-serif; }
+
+     h2 {  font-family: 'Anton', sans-serif;
+
+           font-family: 'Roboto', sans-serif; }
+
+ /* Changing the background color to a more eye-friendly color rather than stark white */
+    body { background-color: #5B5A63;}
+    /* Terminating the style section to begin the body */
+    </style>
+ 
+  
+<!-- Title and text elements for the document structure -->
+    <h1>UAT Launch Sequence</h1>
+    
+    <p> Prepare for Launch!</p>
+    
+    <h2>Countdown</h2>
+  
+ <!--  This is a button to start the countdown
+    This button will call the function StartTheCountdown() when the user clicks it. -->
+    <button type="button" onclick="StartTheCountdown()"> Commence Countdown </button>
+    <p id="CountdownDisplay">10</p>
+
+
+</body>
+
+<script src="main.js"></script>
+<!-- Termination of the body to separate body elements -->
+</html>
+<!-- Termination of the file in its entirety -->
