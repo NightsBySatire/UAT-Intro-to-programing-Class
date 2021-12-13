@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script>    
+//Create function for audio, takes no parameters
+function audio(){
+    //Set variable that becomes the audio (I chose the x-files intro song)
+    var myAudio = new Audio('https://github.com/mespinoza39/Assignment-UAT-Space-Program---We-Have-SOUND-/blob/main/The_X_Files_theme.mp3?raw=true');
+    //Actually have the audio play
+    myAudio.play();
+}
+</script>
+<html lang="en">
+<head>
+    <!-- Have a photo in the website -->
+    <img src="https://github.com/mespinoza39/Assignment-Event-Driven-Programming---Buttons/blob/main/UATspaceLogo.jpg?raw=true">
+    <title>Audio!</title>
+    <h1 style="color:green"> <b>The X-Files </b> </h1>
+</head>
+<!-- Change the background color -->
+<body style="background-color:slategrey">
+    <!-- Create a button that calls the function to play the audio -->
+    <button id="audioButton" type="buton" onclick="audio()">Start</button>
+</body>
+</html>

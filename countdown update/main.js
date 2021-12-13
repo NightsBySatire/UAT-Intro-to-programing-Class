@@ -17,6 +17,17 @@ function StartTheCountdown(){
 
        }
 
+       if (countdown <= 5){
+
+        document.getElementById("CountdownDisplay").innerHTML = "Less than half way to countdown 5s remain";
+        }
+
+        else{
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+        }
+       
+
+
     },timeout)
     //End of the timeout dictation both dictating the end of our code blocks but the dictating what our timeout should be repeatedly, 1000ms = 1 second
     timeout = timeout - 1000;
