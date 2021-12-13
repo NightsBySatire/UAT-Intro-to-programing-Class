@@ -1,23 +1,32 @@
+<!-- Setting our doctype to outline our file format-->
 <!DOCTYPE html>
-<script>    
-//Create function for audio, takes no parameters
-function audio(){
-    //Set variable that becomes the audio (I chose the x-files intro song)
-    var myAudio = new Audio('https://github.com/mespinoza39/Assignment-UAT-Space-Program---We-Have-SOUND-/blob/main/The_X_Files_theme.mp3?raw=true');
-    //Actually have the audio play
-    myAudio.play();
-}
-</script>
-<html lang="en">
-<head>
-    <!-- Have a photo in the website -->
-    <img src="https://github.com/mespinoza39/Assignment-Event-Driven-Programming---Buttons/blob/main/UATspaceLogo.jpg?raw=true">
-    <title>Audio!</title>
-    <h1 style="color:green"> <b>The X-Files </b> </h1>
-</head>
-<!-- Change the background color -->
-<body style="background-color:slategrey">
-    <!-- Create a button that calls the function to play the audio -->
-    <button id="audioButton" type="buton" onclick="audio()">Start</button>
-</body>
+<!-- defining our html and subsiquent sections-->
+<html>
+    <!-- starting with our head to define our character set, title and other metadata to ensure our file is html5 compatible, and with reference to our .css file-->
+    <head>
+        <meta charset="utf-8">
+        <title> Kerbal Space Program </title>
+        <link rel="stylesheet" href="/main.css">
+        <!-- here's where we're importing our icon, rather than be UAT themed I'd make it KSP themed-->
+        <img class="ksp" src="https://github.com/NightsBySatire/UAT-Intro-to-programing-Class/blob/main/We%20have%20sound/1ulqsEq.png?raw=true">
+        <!-- closing our head section-->
+    </head>
+    <!-- begining our body section and js script-->
+    <body>
+        <script>
+            //defining our function name and it's variables, which import the audio from our online github repo to make things simple
+            function playAudio(){
+
+                var myAudio = new Audio('https://github.com/NightsBySatire/UAT-Intro-to-programing-Class/blob/main/We%20have%20sound/Kerbal%20Space%20Program%20Theme%20Song.mp3?raw=true')
+
+                myAudio.play();
+            }
+            //closing our script
+        </script>
+        <!-- defining the rest of our body elements (Thought I'd make htis KSP themed)-->
+        <h1> Kerbal Space Program Motivation</h1>
+        <!-- Creating our button to tie it to our function so it can be played on click -->
+        <button class="button1" id="audioButton" type="button" onclick="playAudio()">Play</button>
+    </body>
 </html>
+<!-- closing our html and boyd files -->
