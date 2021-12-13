@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-// Create the function to enable stop button and disable start buton
-function start(){
-    //change the start button  by getElementByID. Disable it by making value trye
-    document.getElementById("startButton").disabled = true;
-    //Similar to top portion, except false to enabe
-    document.getElementById("stopButton").disabled = false;
-}
-//Create function to enable start and disable stop
-function stop(){
-    //Similar to top function
-    document.getElementById("startButton").disabled = false;
-    document.getElementById("stopButton").disabled = true;
-}
-</script>
+<script src="main.js"></script>
 <head>
     <!-- Get the image for web page-->
-    <img src="https://github.com/mespinoza39/Assignment-Event-Driven-Programming---Buttons/blob/main/UATspaceLogo.jpg?raw=true" style="float:left">
-    <!-- Add Title -->
+    <img src="" style="float:left">
+    <!-- title -->
     <h1 style="float:left">  <br><br> <b>UAT Space Program </b></h1>
     
     <title>Table</title>
@@ -27,7 +13,7 @@ function stop(){
 <body style="background-color:lightblue;">
     <p1><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p1>
     <p2>
-        <!-- Required to have borders for cells-->
+        <!-- Creating borders for the cells-->
     <table border=1 align="left">
         <tr>
             <th> Data </th>
@@ -124,9 +110,9 @@ function stop(){
 
     </table>
     </p2>
-    <!-- Create the buttons and have them call the function-->
+    <!-- creating the buttons and have them tie into the function, both for start and stop respectively-->
     <p3> <button id="startButton" type="buton" onclick="start()">Start</button> </p3>
-    <!-- Same as above but for stop button-->
+
     <p4> <button id="stopButton" type="button" onclick="stop()" disabled>Stop</button> </p4>
 
 </body>
